@@ -1,5 +1,6 @@
 var sys = require("sys");
-var client = require("redis-node-client/lib/redis-client").createClient();
+// sudo npm install http://github.com/technoweenie/redis-node-client/tarball/npm
+var client = require("redis-client").createClient();
 
 // Set a value
 client.set('foo', '42', function (err, success) {
